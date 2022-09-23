@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     border: none;
 }
@@ -14,7 +14,8 @@ body {
 
 /* headings and logo */
 
-h1, h2 {
+h1,
+h2 {
     font-family: Oswald, san-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -34,12 +35,13 @@ h1, h2 {
     letter-spacing: 4px;
 }
 
-#menu, #logo {
+#menu,
+#logo {
     line-height: 75px;
-} 
+}
 
 #menu li {
-    float:right;
+    float: right;
     list-style-type: none;
     margin-right: 30px;
 }
@@ -67,8 +69,9 @@ h1, h2 {
     position: relative;
 }
 
-#cover-text, #cover-text h2 {
-    color:#fff;
+#cover-text,
+#cover-text h2 {
+    color: #fff;
 }
 
 #hero-image {
@@ -84,10 +87,11 @@ h1, h2 {
 
 /* create the level of zoom for hero image */
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
@@ -98,7 +102,7 @@ h1, h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
 
-    width:300px;
+    width: 300px;
     height: 200px;
 
     padding-top: 40px;
@@ -191,7 +195,7 @@ hr {
 /* event times */
 
 #times {
-    background-image:  url('../images/dublin-city.webp');
+    background-image: url('../images/dublin-city.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -212,7 +216,7 @@ hr {
 }
 
 #times h2 {
-    color: #fafafa ;
+    color: #fafafa;
 }
 
 /* footer */
@@ -225,7 +229,7 @@ footer {
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
@@ -245,7 +249,7 @@ footer {
     column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
     width: 100%;
 }
 
@@ -254,68 +258,74 @@ footer {
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
 
-#club-ethos {
-    width:65%;
-    height: 1200px;
-    margin: 0 auto;
-}
-
-#welcome {
-    padding: 30px 0;
-    margin: 0;
-}
-
-#left-about, #right-about {
-    width: 100%;
-    float: left;
-    padding: 0;
-}
-
-#center-about {
-    clear: both;
-    width: 100%;
-    float: left;
-    padding: 0%;
-}
-
-hr {
-    display: none;
-}
-}
-
-/* For medium screen sizes from 950px wide and down */ 
-@media screen and (max-width: 950px) {
-
-    #menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line height: 25px;
-
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
     }
-}
 
-#cover-text {
-    left: 0;
-}
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
 
-#club-ethos {
-    width:90%;
-    height: 1200px;
-    margin: 0 auto;
-}
+    #left-about,
+    #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
 
-.left-about-heading, .right-about-heading {
-    width: inherit;
-}
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0%;
+    }
 
-.left-about-heading h2, .right-about-heading h2 {
-    width: 100%;
-    text-align: center;
-}
+    hr {
+        display: none;
+    }
 
-.left-about-heading p, .right-about-heading p {
-    text-align: center;
-    padding: 0 20px;
+
+    /* For medium screen sizes from 950px wide and down */
+    @media screen and (max-width: 950px) {
+
+        #menu {
+            clear: left;
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            line-height: 25px;
+
+        }
+
+        #cover-text {
+            left: 0;
+        }
+
+        #club-ethos {
+            width: 90%;
+            height: 1200px;
+            margin: 0 auto;
+        }
+
+        .left-about-heading,
+        .right-about-heading {
+            width: inherit;
+        }
+
+        .left-about-heading h2,
+        .right-about-heading h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .left-about-heading p,
+        .right-about-heading p {
+            text-align: center;
+            padding: 0 20px;
+        }
+    }
+
 }
